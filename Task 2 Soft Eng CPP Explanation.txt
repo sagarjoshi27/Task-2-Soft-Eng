@@ -1,0 +1,28 @@
+The challenge was to make an efficient algorithm that prints out all prime numbers 
+of a given number. A function definition was given, from which we had to create an 
+algorithm. The name of the given function was "primeFactorisation(unsigned long long int)". 
+This function takes in a variable which I named "data" and it uses that to give an output
+in the type of a list which is of the same type as the data. That list is what I have called "result".
+
+First you need to understand how to get prime factors from the given data. 
+At first the algorithm checks whether the data is 0. If it is 0 then there would be an error.
+Resulting in a never-ending loop. After that, I set the data as the value of two.
+As two is the first prime number. So it finds the number of factors of the value of two.
+Therefore, the first loop takes care of the even numbers. 
+As it will divide them by two each time until the remainder is not equal to zero.
+This is to find if there are more factors of the value of two. 
+After each division the data will be sent to the results list.  
+
+Now we have the total number of factors of the value of two. Which is why we can now skip all even elements. 
+As data now will be odd. Because of this integer i = i + 2. With this we can find the other prime factors.
+This is possible as we are now comparing the data with odd numbers and can check if the result is prime factors,
+starting with the value of three with the increments of two each time meaning only odd numbers are checked. 
+The main part is that the loop runs till the square root of the given data. 
+This runs until the given data either becomes one or a prime number. 
+
+If there is a situation where the data given is a prime number greater than two. 
+Then, the third step will help with it. This part checks for the last prime factor, larger than two. 
+As through steps one and two all instances where prime factor was two has been found. 
+After any other prime factors are found, the result is then given. 
+This algorithm handles prime factorisation quite efficiently as another piece of code helps to do the last
+remaining part of the code. 
